@@ -1,8 +1,11 @@
-Resolución del ejercicio N°26 de la unidad 3 de programación 2.
-Este programa modela un sistema de gestión de animales que simula diferentes comportamientos sonoros mediante el uso de herencia, atributos protegidos, polimorfismo y sobrescritura de métodos en Java.
+Este programa está diseñado para modelar una jerarquía de clases de animales aplicando los pilares fundamentales de la programación orientada a objetos en Java: herencia, encapsulamiento y polimorfismo mediante la sobrescritura de métodos (@Override).
 
-Clases utilizadas
-Animal: Clase base que almacena los datos comunes (nombre, edad) y define el método general hacerSonido().
-Perro: Clase hija que extiende de Animal y sobrescribe el método hacerSonido() para imprimir "Guau".
-Gato: Clase hija que extiende de Animal y sobrescribe el método hacerSonido() para imprimir "Miau".
-Pajaro: Clase hija que extiende de Animal y sobrescribe el método hacerSonido() para imprimir "Pío".
+A continuación se detalla exactamente lo que hace cada parte del programa:
+
+Define la clase base Animal: Concentra los atributos comunes a cualquier especie (nombre y edad) y define un método genérico hacerSonido() que puede ser heredado o especializado.
+
+Desarrolla las clases hijas (Perro, Gato y Pajaro): Extienden de Animal utilizando la palabra clave super en sus constructores para inicializar los atributos heredados de forma limpia y segura.
+
+Sobrescribe el método hacerSonido(): Cada subclase implementa su propia versión del método utilizando la anotación @Override para imprimir el sonido característico correspondiente ("Guau", "Miau", "Pío").
+
+Ejecuta la prueba en el main: Crea una colección polimórfica de diferentes animales, la recorre invocando sus respectivos métodos de datos y sonidos, y muestra los resultados formateados por consola.
